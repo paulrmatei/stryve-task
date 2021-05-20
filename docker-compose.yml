@@ -6,7 +6,7 @@ services:
     restart: always
     build: .
     environment:
-      - DOCKER=docker
+      - MONGO_HOST=mongo
     ports:
       - '80:4000'
     links:
